@@ -38,6 +38,10 @@ const Footer = () => {
     </fieldset>
   </form>
 </footer>
+<div className='border-t border-[rgba(255,255,255,0.22)] py-7'>
+ 
+  <p className='text-neutral-500 text-center'>@2026 Your Company All Rights Reserved.</p>
+</div>
 </section>
     
   );
