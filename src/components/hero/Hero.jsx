@@ -5,7 +5,7 @@ import bannerImg from '../../assets/images/banner-main.png'
 const Hero = () => {
 
   return (
-    <section className={`max-w-7xl mx-auto my-10 w-[90%] py-16   rounded-3xl  bg-[url(/bg-shadow.png)] bg-neutral bg-cover bg-bottom-left md:bg-center`}>
+    <section className={`max-w-7xl mx-auto my-10 w-[90%] py-16 rounded-3xl  bg-[url(/bg-shadow.png)] bg-neutral bg-cover bg-bottom-left md:bg-center`}>
       <div className='space-y-6'>
         <div className='flex justify-center'><img src={bannerImg} alt='Banner main image' /></div>
         <div className='text-center lg:w-[80%] mx-auto'>

@@ -1,4 +1,4 @@
-
+import bplLogo from '../../assets/images/logo.png'
 import coinImg from '../../assets/images/coin_img.png'
 const Nav = () => {
   return (
@@ -18,7 +18,7 @@ const Nav = () => {
 <li><a href="">Schedules</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <div className='lg:pl-2.5'><img src={bplLogo} alt="bpl logo" className='w-14 h-14'/></div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
