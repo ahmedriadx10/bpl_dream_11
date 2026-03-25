@@ -16,16 +16,17 @@
 
 import CardPlayer from "../../ui/CardPlayer";
 
-const Available = ({ playersData }) => {
-  console.log(playersData);
+const Available = ({ playersData,coins,setCoins }) => {
 
+  
+  
   return <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
 
 
 
 
-{playersData.map(card=><CardPlayer key={card.id} {...card}/>)}
+{playersData.map(card=><CardPlayer coins={coins} setCoins={setCoins} key={card.id} {...card}/>)}
 
   </section>;
 };

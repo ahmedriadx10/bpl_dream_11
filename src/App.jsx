@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import Footer from "./components/footer/Footer";
 import Hero from "./components/hero/Hero";
 import Nav from "./components/navbar/Nav";
@@ -10,12 +10,15 @@ const dataPromise=async ()=>{
 }
 const App = () => {
    const promiseJson=dataPromise()
+const [coins,setCoins]=useState(50000)
+
+
   return (
    <>
-   <Nav/>
+   <Nav coins={coins}/>
    <Hero/>
   <Suspense fallback={<h2>Data is loading...</h2>}>
-     <PlayersContainer promiseJson={promiseJson}/>
+     <PlayersContainer promiseJson={promiseJson} coins={coins} setCoins={setCoins}/>
   </Suspense>
    <Footer/>
    </>

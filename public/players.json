@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "player_img": "https://i.ibb.co.com/XW3Nf5S/rashid.jpg",
+    "player_img": "https://www.gujarattitansipl.com/static-assets/images/players/65748.png?v=6.19",
     "name": "Rashid Khan",
     "country": "Afghanistan",
     "batting_style": "Right-hand bat",
     "bowling_style": "Leg break googly",
-    "price": 950000,
+    "price": 5000,
     "rating": 4.9,
     "role": "All-rounder"
   },
@@ -17,7 +17,7 @@
     "country": "South Africa",
     "batting_style": "Left-hand bat",
     "bowling_style": "Off break",
-    "price": 800000,
+    "price": 8000,
     "rating": 4.8,
     "role": "Specialist"
   },
@@ -28,7 +28,7 @@
     "country": "Pakistan",
     "batting_style": "Right-hand bat",
     "bowling_style": "Wicketkeeper",
-    "price": 900000,
+    "price": 9000,
     "rating": 4.8,
     "role": "Specialist"
   },
@@ -39,7 +39,7 @@
     "country": "England",
     "batting_style": "Left-hand bat",
     "bowling_style": "Off break",
-    "price": 750000,
+    "price": 7500,
     "rating": 4.7,
     "role": "All-rounder"
   },
@@ -50,7 +50,7 @@
     "country": "Sri Lanka",
     "batting_style": "Right-hand bat",
     "bowling_style": "Leg break",
-    "price": 850000,
+    "price": 8500,
     "rating": 4.8,
     "role": "All-rounder"
   },
@@ -61,7 +61,7 @@
     "country": "West Indies",
     "batting_style": "Left-hand bat",
     "bowling_style": "Off break",
-    "price": 880000,
+    "price": 8800,
     "rating": 4.7,
     "role": "Specialist"
   },
@@ -72,18 +72,18 @@
     "country": "Zimbabwe",
     "batting_style": "Right-hand bat",
     "bowling_style": "Off break",
-    "price": 650000,
+    "price": 6500,
     "rating": 4.6,
     "role": "All-rounder"
   },
   {
     "id": 8,
-    "player_img": "https://p.imgci.com/db/PICTURES/CMS/263500/263564.1.png",
+    "player_img": "https://iplcricbet.com/wp-content/uploads/2024/04/Andre-Russell.jpg",
     "name": "Andre Russell",
     "country": "West Indies",
     "batting_style": "Right-hand bat",
     "bowling_style": "Right-arm fast",
-    "price": 980000,
+    "price": 9800,
     "rating": 4.9,
     "role": "All-rounder"
   },
@@ -94,7 +94,7 @@
     "country": "England",
     "batting_style": "Right-hand bat",
     "bowling_style": "Right-arm medium",
-    "price": 720000,
+    "price": 7200,
     "rating": 4.5,
     "role": "Specialist"
   }

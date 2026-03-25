@@ -1,6 +1,6 @@
 import bplLogo from '../../assets/images/logo.png'
 import coinImg from '../../assets/images/coin_img.png'
-const Nav = () => {
+const Nav = ({coins}) => {
   return (
    
       <nav className="navbar bg-base-100 shadow-sm">
@@ -29,7 +29,7 @@ const Nav = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <button className="btn"><span>0 Coin </span><img src={coinImg} alt="" /></button>
+    <button className="btn"><span>{coins} Coin </span><img src={coinImg} alt="" /></button>
   </div>
 </nav>
    

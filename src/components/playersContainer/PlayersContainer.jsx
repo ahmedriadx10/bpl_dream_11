@@ -3,7 +3,7 @@ import Available from "./available/Available";
 import Selected from "./selected/Selected";
 
 
-const PlayersContainer = ({promiseJson}) => {
+const PlayersContainer = ({promiseJson,coins,setCoins}) => {
  const playersData=use (promiseJson)
 
 
@@ -37,7 +37,7 @@ const PlayersContainer = ({promiseJson}) => {
         </div>
       </div>
 
-{containerState==='available'? <Available playersData={playersData}  /> : <Selected />}
+{containerState==='available'? <Available playersData={playersData} coins={coins} setCoins={setCoins} /> : <Selected />}
 
 
 
