@@ -1,3 +1,4 @@
+import Footer from "./components/footer/Footer";
 import Hero from "./components/hero/Hero";
 import Nav from "./components/navbar/Nav";
 import PlayersContainer from "./components/playersContainer/PlayersContainer";
@@ -8,6 +9,7 @@ const App = () => {
    <Nav/>
    <Hero/>
    <PlayersContainer/>
+   <Footer/>
    </>
   );
 };
