@@ -7,11 +7,11 @@ const Footer = () => {
 <div className='max-w-7xl w-[90%] mx-auto border border-base-100 rounded-3xl p-6 bg-[rgba(255,255,255,0.2)] -mt-40 mb-9 '>
   <div className='py-22 bg-[url(/bg-shadow.png)] bg-center bg-cover bg-no-repeat bg-base-300 rounded-3xl'>
   <div className='max-w-xl w-[90%] text-center mx-auto space-y-4'>
-    <h6 className='font-bold text-3xl'>Subscribe to our Newsletter</h6>
-    <p className='font-medium text-xl'>Get the latest updates and news right in your inbox!</p>
-    <div className='flex gap-2'>
-      <input className='input' type="email" placeholder='Enter your email'/
-      ><button className='btn bg-linear-[90deg,#E05C51,#FE9F30] border-none'>Subscribe</button>
+    <h6 className='font-bold text-[32px]'>Subscribe to our Newsletter</h6>
+    <p className='font-medium text-lg text-neutral-700'>Get the latest updates and news right in your inbox!</p>
+    <div className='flex gap-2 justify-center'>
+      <input className='input rounded-lg ' type="email" placeholder='Enter your email'/
+      ><button className='btn bg-linear-[90deg,#E05C51,#FE9F30] border-none rounded-lg'>Subscribe</button>
     </div>
   </div>
   </div>

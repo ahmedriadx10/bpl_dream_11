@@ -5,15 +5,15 @@ const PlayersContainer = () => {
 
   return (
     <section className="max-w-7xl mx-auto w-[90%]">
-      <div className="flex justify-between items-center py-5">
-        <div className="font-bold text-3xl">
+      <div className="flex flex-wrap justify-center  sm:justify-between   items-center py-5 gap-2.5">
+        <div className="font-bold text-xl sm:text-2xl    md:text-3xl">
           {containerState === "available" ? (
             <h2>Available Players</h2>
           ) : (
             <h2>Selected Player (0/6)</h2>
           )}
         </div>
-        <div className="">
+        <div className=" ">
           <button
             onClick={() => setContainerState("available")}
             className={`btn  rounded-r-none rounded-lg ${containerState === "available" ? "bg-[#E7FE29]" : ""}`}
