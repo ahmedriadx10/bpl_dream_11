@@ -2,10 +2,25 @@ import footerLogo from '../../assets/images/logo-footer.png'
 const Footer = () => {
   return (
   
-<section className="border bg-[#06091a] pt-30">
+<section className="border bg-[#06091a] mt-40">
 
+<div className='max-w-7xl w-[90%] mx-auto border border-base-100 rounded-3xl p-6 bg-[rgba(255,255,255,0.2)] -mt-40 mb-9 '>
+  <div className='py-22 bg-[url(/bg-shadow.png)] bg-center bg-cover bg-no-repeat bg-base-300 rounded-3xl'>
+  <div className='max-w-xl w-[90%] text-center mx-auto space-y-4'>
+    <h6 className='font-bold text-3xl'>Subscribe to our Newsletter</h6>
+    <p className='font-medium text-xl'>Get the latest updates and news right in your inbox!</p>
+    <div className='flex gap-2'>
+      <input className='input' type="email" placeholder='Enter your email'/
+      ><button className='btn bg-linear-[90deg,#E05C51,#FE9F30] border-none'>Subscribe</button>
+    </div>
+  </div>
+  </div>
+</div>
+
+{/* footer logo */}
 <div className=''><img src={footerLogo} alt="footer logo" className='mx-auto'/></div>
 
+{/* footer area */}
 <footer className="footer sm:footer-horizontal  text-base-content p-10 max-w-7xl mx-auto  justify-between">
 <div className='max-w-72'>
   <h6 className='footer-title text-base-200'>About Us</h6>
@@ -38,6 +53,7 @@ const Footer = () => {
     </fieldset>
   </form>
 </footer>
+{/* divider with copyright */}
 <div className='border-t border-[rgba(255,255,255,0.22)] py-7'>
  
   <p className='text-neutral-500 text-center'>@2026 Your Company All Rights Reserved.</p>
