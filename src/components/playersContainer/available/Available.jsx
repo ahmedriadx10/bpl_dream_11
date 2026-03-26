@@ -16,7 +16,7 @@
 
 import CardPlayer from "../../ui/CardPlayer";
 
-const Available = ({ playersData,coins,setCoins }) => {
+const Available = ({ playersData,coins,setCoins,setSelectedPlayers,selectedPlayers }) => {
 
   
   
@@ -26,7 +26,7 @@ const Available = ({ playersData,coins,setCoins }) => {
 
 
 
-{playersData.map(card=><CardPlayer coins={coins} setCoins={setCoins} key={card.id} {...card}/>)}
+{playersData.map(card=><CardPlayer selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} coins={coins} setCoins={setCoins} key={card.id} card={card}/>)}
 
   </section>;
 };

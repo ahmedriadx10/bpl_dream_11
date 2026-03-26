@@ -11,6 +11,11 @@ const PlayersContainer = ({promiseJson,coins,setCoins}) => {
 
   const [containerState, setContainerState] = useState("available");
 
+const [selectedPlayers,setSelectedPlayers]=useState([])
+
+
+
+
   return (
     <main className="max-w-7xl mx-auto  w-[90%]">
       <div className="flex flex-wrap justify-center  sm:justify-between   items-center py-5 gap-2.5">
@@ -18,7 +23,7 @@ const PlayersContainer = ({promiseJson,coins,setCoins}) => {
           {containerState === "available" ? (
             <h2>Available Players</h2>
           ) : (
-            <h2>Selected Player (0/{playersData.length})</h2>
+            <h2>Selected Player ({selectedPlayers.length}/{playersData.length})</h2>
           )}
         </div>
         <div className=" ">
@@ -32,12 +37,12 @@ const PlayersContainer = ({promiseJson,coins,setCoins}) => {
             onClick={() => setContainerState("selected")}
             className={`btn  rounded-l-none rounded-lg ${containerState === "selected" ? "bg-[#E7FE29]" : "bg-base-100"}`}
           >
-            Selected (0)
+            Selected ({selectedPlayers.length})
           </button>
         </div>
       </div>
 
-{containerState==='available'? <Available playersData={playersData} coins={coins} setCoins={setCoins} /> : <Selected />}
+{containerState==='available'? <Available playersData={playersData} coins={coins} setCoins={setCoins} selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} /> : <Selected selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} coins={coins} setCoins={setCoins} />}
 
 
 

@@ -2,20 +2,28 @@ import { use, useState } from "react";
 import { CiFlag1 } from "react-icons/ci";
 import {  FaUser } from "react-icons/fa";
 import { PiRabbit } from "react-icons/pi";
+import { toast } from "react-toastify";
 
-const CardPlayer = ({player_img,name,country,batting_style,price,rating,role,coins,setCoins}) => {
+const CardPlayer = ({setSelectedPlayers,selectedPlayers,card,coins,setCoins}) => {
+
+ const {id,player_img,name,country,batting_style,price,rating,role}=card
  const [selected,setSelected]=useState(false)
 
+const findPlayerCardItSelf=selectedPlayers.find((x)=>x.id===id)
 
 const handleChoose=()=>{
 
 if(coins<price){
-  alert('Balance Low')
+  
+toast.error(`Insufficient balance, you also need $${price - coins}`)
   return
 }
 
-setSelected(true)
-setCoins(coins - price)
+
+setSelected(true);
+setCoins(coins - price);
+setSelectedPlayers([...selectedPlayers,card])
+toast.success(`Successfully choosed Successfully purchased player ${name} for a cost of $${price}`)
 }
 
 
@@ -41,7 +49,7 @@ setCoins(coins - price)
 </div>
 
     <div className="card-actions justify-end">
-      <button onClick={handleChoose} disabled={selected} className="btn btn-primary btn-soft">{selected? 'Selected':'Choose Player'}</button>
+      <button onClick={handleChoose} disabled={findPlayerCardItSelf?true:false} className="btn btn-primary btn-soft">{selected? 'Selected':'Choose Player'}</button>
     </div>
   </div>
 </div>

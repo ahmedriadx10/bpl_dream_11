@@ -2,7 +2,7 @@ import footerLogo from '../../assets/images/logo-footer.png'
 const Footer = () => {
   return (
   
-<section className="border bg-[#06091a] mt-40">
+<section className="border bg-[#06091a] mt-70">
 
 <div className='max-w-7xl w-[90%] mx-auto border border-base-100 rounded-3xl p-6 bg-[rgba(255,255,255,0.2)] -mt-40 mb-9 '>
   <div className='py-22 bg-[url(/bg-shadow.png)] bg-center bg-cover bg-no-repeat bg-base-300 rounded-3xl'>
