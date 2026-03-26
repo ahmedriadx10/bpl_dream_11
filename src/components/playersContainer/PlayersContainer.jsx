@@ -42,7 +42,7 @@ const [selectedPlayers,setSelectedPlayers]=useState([])
         </div>
       </div>
 
-{containerState==='available'? <Available playersData={playersData} coins={coins} setCoins={setCoins} selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} /> : <Selected selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} coins={coins} setCoins={setCoins} />}
+{containerState==='available'? <Available playersData={playersData} coins={coins} setCoins={setCoins} selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} /> : <Selected selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} coins={coins} setCoins={setCoins} setContainerState={setContainerState} />}
 
 
 
